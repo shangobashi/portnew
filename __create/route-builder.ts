@@ -10,8 +10,28 @@ const api = new Hono();
 
 // Get current directory
 const __dirname = join(fileURLToPath(new URL('.', import.meta.url)), '../src/app/api');
+const routeModuleGlob = import.meta.glob('../src/app/api/**/route.js', {
+  eager: true,
+});
+const routeModuleMap = new Map(
+  Object.entries(routeModuleGlob).map(([key, value]) => [getRelativeRoutePath(key), value])
+);
 if (globalThis.fetch) {
   globalThis.fetch = updatedFetch;
+}
+
+function getRelativeRoutePath(routeFile: string): string {
+  const normalized = routeFile.replace(/\\/g, '/');
+  const marker = '/src/app/api';
+  const index = normalized.lastIndexOf(marker);
+  if (index === -1) {
+    return normalized;
+  }
+  return normalized.slice(index + marker.length);
+}
+
+function isRootRoute(routeFile: string): boolean {
+  return getRelativeRoutePath(routeFile) === '/route.js';
 }
 
 // Recursively find all route.js files
@@ -44,7 +64,7 @@ async function findRouteFiles(dir: string): Promise<string[]> {
 
 // Helper function to transform file path to Hono route path
 function getHonoPath(routeFile: string): { name: string; pattern: string }[] {
-  const relativePath = routeFile.replace(__dirname, '');
+  const relativePath = getRelativeRoutePath(routeFile);
   const parts = relativePath.split('/').filter(Boolean);
   const routeParts = parts.slice(0, -1); // Remove 'route.js'
   if (routeParts.length === 0) {
@@ -65,14 +85,21 @@ function getHonoPath(routeFile: string): { name: string; pattern: string }[] {
 
 // Import and register all routes
 async function registerRoutes() {
-  const routeFiles = (
-    await findRouteFiles(__dirname).catch((error) => {
-      console.error('Error finding route files:', error);
-      return [];
-    })
-  )
+  const sourceFiles = import.meta.env.DEV
+    ? await findRouteFiles(__dirname).catch((error) => {
+        console.error('Error finding route files:', error);
+        return [];
+      })
+    : Array.from(routeModuleMap.keys());
+  const routeFiles = sourceFiles
     .slice()
     .sort((a, b) => {
+      if (isRootRoute(a)) {
+        return -1;
+      }
+      if (isRootRoute(b)) {
+        return 1;
+      }
       return b.length - a.length;
     });
 
@@ -81,7 +108,9 @@ async function registerRoutes() {
 
   for (const routeFile of routeFiles) {
     try {
-      const route = await import(/* @vite-ignore */ `${routeFile}?update=${Date.now()}`);
+      const route = import.meta.env.DEV
+        ? await import(/* @vite-ignore */ `${routeFile}?update=${Date.now()}`)
+        : (routeModuleMap.get(routeFile) as Record<string, Handler | undefined> | undefined);
 
       const methods = ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'];
       for (const method of methods) {
