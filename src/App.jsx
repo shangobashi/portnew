@@ -470,7 +470,7 @@ export default function App() {
 
   const credentials = [
     "Full Stack Engineer (~300h) - Codecademy",
-    "Computer Science - Codecademy (~100h)",
+    "Computer Science (~100h) - Codecademy",
     "AI/ML Engineer (~100h) - Codecademy",
     "UI/UX Engineer (~50h) - Codecademy",
     "Harvard CS50 - Python, HTML/CSS/JS, AI fundamentals",
