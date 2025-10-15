@@ -469,14 +469,13 @@ export default function App() {
   ];
 
   const credentials = [
-    "Full Stack Engineer (~150h) - Codecademy",
+    "Full Stack Engineer (~300h) - Codecademy",
+    "Computer Science - Codecademy (~100h)",
     "AI/ML Engineer (~100h) - Codecademy",
     "UI/UX Engineer (~50h) - Codecademy",
     "Harvard CS50 - Python, HTML/CSS/JS, AI fundamentals",
     "MIT Machine Learning - In-depth specialization",
-    "FreeCodeCamp - Math, Python, JavaScript, React, CV, Data Science",
-    "Ethical Hacking & Cybersecurity - Security fundamentals",
-    "Computer Science & Data Engineering - Codecademy (in progress)",
+    "Ethical Hacking & Cybersecurity - Codecademy"
   ];
 
   return (
