@@ -1,4 +1,3 @@
-"use client";
 
 import React, { useEffect, useRef, useState } from "react";
 import {
@@ -388,7 +387,7 @@ function DisintegrationCanvas({ text = "Shango Bashi", isDark = true }) {
   );
 }
 
-export default function Portfolio() {
+export default function App() {
   const [scrollY, setScrollY] = useState(0);
   const [isVisible, setIsVisible] = useState({});
 
@@ -737,12 +736,6 @@ export default function Portfolio() {
         </footer>
       </div>
 
-      <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&display=swap');
-        .font-inter{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
-        html{scroll-behavior:smooth}
-        body{font-feature-settings:'cv02','cv03','cv04','cv11';-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-      `}</style>
     </div>
   );
 }
