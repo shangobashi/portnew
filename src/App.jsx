@@ -472,7 +472,7 @@ export default function App() {
     "Full Stack Engineer (~300h) - Codecademy",
     "Computer Science (~100h) - Codecademy",
     "AI/ML Engineer (~100h) - Codecademy",
-    "UI/UX Engineer (~50h) - Codecademy",
+    "UI/UX Designer (~50h) - Codecademy",
     "Harvard CS50 - Python, HTML/CSS/JS, AI fundamentals",
     "MIT Machine Learning - In-depth specialization",
     "Ethical Hacking & Cybersecurity - Codecademy"
