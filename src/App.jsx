@@ -531,7 +531,7 @@ export default function App() {
             <h1 className="sr-only">Shango Bashi</h1>
 
             <p className="text-lg md:text-xl mb-12 font-light leading-relaxed text-gray-300">
-              Full Stack Engineer crafting the future through AI, Blockchain,
+              Full-Stack Engineer crafting the future through AI, Blockchain,
               and Creative Technology
             </p>
 
