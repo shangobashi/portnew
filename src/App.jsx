@@ -469,13 +469,16 @@ export default function App() {
   ];
 
   const credentials = [
-    "Full Stack Engineer (~300h) - Codecademy",
-    "Computer Science (~100h) - Codecademy",
-    "AI/ML Engineer (~100h) - Codecademy",
+    "IBM - Software Engineer Professional Certification (exp. Nov 2025)",
+    "Alchemy University - Blockchain Engineer Certification (exp. Nov 2025)",
+    "Codecademy - Full-Stack Engineer Professional Certifications (2025)",
+    "Codecademy - Computer Science Professional Certifications (2025)",
+    "Codecademy - AI/ML Engineer Professional Certification (2025)",
     "UI/UX Designer (~50h) - Codecademy",
-    "Harvard CS50 - Python, HTML/CSS/JS, AI fundamentals",
-    "MIT Machine Learning - In-depth specialization",
-    "Ethical Hacking & Cybersecurity - Codecademy"
+    "Harvard CS50 - Python, HTML/CSS/JS, AI Fundamentals (2022)",
+    "MIT 6.S191 - Deep Learning Fundamentals (2025)",
+    "DeepMind.AI - AI Fundamentals (2023)",
+    "SoloLearn - Certifications in HTML, CSS, Javascript & PHP (2021)"
   ];
 
   return (
@@ -584,7 +587,7 @@ export default function App() {
 
                   {/* Credentials */}
                   <div className="pt-6">
-                    <h3 className="text-xl font-medium mb-4">Credentials</h3>
+                    <h3 className="text-xl font-medium mb-4">Education & Certifications</h3>
                     <div className="space-y-3">
                       {credentials.map((credential, index) => (
                         <div
