@@ -453,7 +453,7 @@ export default function App() {
       description:
         'Plethora — Real-time Rug Risk for Memecoins. A high-performance SaaS that scores token rug risk in under two seconds with wallet-authenticated access (Solana), a credit-based usage system, and transparent risk factors. Powered by a proprietary fine-tuned LLM. Phase 2 adds "Meme Historian" lore context to enrich trading decisions.',
       image:
-        "https://raw.createusercontent.com/5af0c7ca-4706-43ad-bbc1-632bfa6bd464/",
+        "https://i.imgur.com/T8UNfqH.jpg",
       tech: ["TypeScript", "React", "Node.js", "PostgreSQL", "Vercel"],
       github: "https://github.com/shangobashi",
     },
