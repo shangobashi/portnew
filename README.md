@@ -1,13 +1,13 @@
-# Shango Bashi Portfolio
+ # Shango Bashi Portfolio
 
-A single-page portfolio experience for Shango Bashi built with React, Vite, and Tailwind CSS. The site showcases engineering disciplines, featured projects, and education & certifications with an animated hero canvas and light/dark-ready design system.
+A single-page portfolio experience by Shango Bashi built with React, Vite, and Tailwind CSS. The site showcases engineering disciplines, featured projects, and education & certifications with an animated hero canvas and light/dark-ready design system.
 
 ## Tech Stack
 
-- **React 18** – component-driven UI
-- **Vite 6** – lightning-fast bundler and dev server
-- **Tailwind CSS 3** – utility-first styling and theming
-- **Lucide Icons** – iconography for quick visual cues
+- **React** â€“ component-driven UI
+- **Vite** â€“ lightning-fast bundler and dev server
+- **Tailwind CSS** â€“ utility-first styling and theming
+- **Lucide Icons** â€“ iconography for quick visual cues
 
 ## Getting Started
 
@@ -32,9 +32,9 @@ apps/web/
 +-- index.html          # Vite entry HTML
 +-- package.json        # scripts and dependencies
 +-- src/
-¦   +-- App.jsx         # main portfolio UI
-¦   +-- index.css       # global Tailwind styles and typography
-¦   +-- main.jsx        # React/Vite bootstrap
+Â¦   +-- App.jsx         # main portfolio UI
+Â¦   +-- index.css       # global Tailwind styles and typography
+Â¦   +-- main.jsx        # React/Vite bootstrap
 +-- tailwind.config.js  # Tailwind configuration
 +-- postcss.config.js   # PostCSS plugins
 +-- vercel.json         # Vercel deployment settings
@@ -46,4 +46,4 @@ The site is deployed on Vercel as a static build. Running `vercel deploy --prod`
 
 ## License
 
-This repository is private and all rights are reserved to Shango Bashi.
+This repository is private and all rights are reserved to Shango Bashi :).
