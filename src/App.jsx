@@ -12,7 +12,7 @@ import {
   Sun,
   Moon,
 } from "lucide-react";
-import plethoraImage from './plethora.png';
+const plethoraImage = new URL('./plethora.png', import.meta.url).href;
 
 /**
  * DisintegrationCanvas — FULL-SCREEN, transparent, theme-synced.
