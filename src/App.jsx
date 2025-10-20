@@ -4,7 +4,6 @@ import {
   Github,
   Twitter,
   Mail,
-  ExternalLink,
   Code,
   Palette,
   Music,
@@ -472,7 +471,7 @@ export default function App() {
     "IBM - Software Engineer Professional Certification (exp. Nov 2025)",
     "Alchemy University - Blockchain Engineer Certification (exp. Nov 2025)",
     "Codecademy - Full-Stack Engineer Professional Certifications (2025)",
-    "Codecademy - Computer Science Professional Certifications (2025)",
+    "Codecademy - Computer Science Professional Certification (2025)",
     "Codecademy - AI/ML Engineer Professional Certification (2025)",
     "Codecademy - UI/UX Designer Professional Certification (2025)",
     "MIT 6.S191 - Deep Learning Fundamentals (2025)",
@@ -678,13 +677,9 @@ export default function App() {
                           </span>
                         ))}
                       </div>
-                      <a
-                        href={project.github}
-                        className="inline-flex items-center space-x-2 hover:opacity-70 transition-opacity text-gray-300"
-                      >
-                        <span>View on GitHub</span>
-                        <ExternalLink className="w-4 h-4" />
-                      </a>
+                      <span className="inline-flex items-center space-x-2 text-gray-500 opacity-60 cursor-not-allowed">
+                        In Production...
+                      </span>
                     </div>
                   </div>
                 ))}
@@ -732,7 +727,7 @@ export default function App() {
         <footer className="py-12 px-6 border-t border-gray-800">
           <div className="max-w-6xl mx-auto text-center">
             <p className="text-sm text-gray-400">
-              © 2025 Shango Bashi. Crafted with precision.
+              2025 Shango Bashi.
             </p>
           </div>
         </footer>
