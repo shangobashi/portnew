@@ -474,10 +474,10 @@ export default function App() {
     "Codecademy - Full-Stack Engineer Professional Certifications (2025)",
     "Codecademy - Computer Science Professional Certifications (2025)",
     "Codecademy - AI/ML Engineer Professional Certification (2025)",
-    "UI/UX Designer (~50h) - Codecademy",
-    "Harvard CS50 - Python, HTML/CSS/JS, AI Fundamentals (2022)",
+    "Codecademy - UI/UX Designer Professional Certification (2025)",
     "MIT 6.S191 - Deep Learning Fundamentals (2025)",
     "DeepMind.AI - AI Fundamentals (2023)",
+    "Harvard CS50 - Python, HTML/CSS/JS, AI Fundamentals (2022)",
     "SoloLearn - Certifications in HTML, CSS, Javascript & PHP (2021)"
   ];
 
