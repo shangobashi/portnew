@@ -458,6 +458,14 @@ export default function App() {
       tech: ["TypeScript", "React", "Node.js", "PostgreSQL", "Vercel"],
       github: "https://github.com/shangobashi",
     },
+    {
+      title: "Shango.GBA",
+      description:
+        "Shango.GBA -- Interactive Portfolio. Dive into the past with this interactive portfolio made to look like a (sigh) retro GBA game, running entirely inside the browser. Made with plain HTML/CSS, Vanilla Javascript, Kaplay.JS, Terser.JS, built with Vite and hosted on Vercel with a DuckDuckGo DNS. Have fun exploring!",
+      image: "",
+      tech: ["HTML", "CSS", "JavaScript", "Kaplay.js", "Terser", "Vite", "Vercel", "DuckDNS"],
+      github: "",
+    },
   ];
 
   const skills = [
@@ -737,3 +745,6 @@ export default function App() {
     </div>
   );
 }
+
+
+
