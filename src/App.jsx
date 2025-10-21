@@ -4,6 +4,7 @@ import {
   Github,
   Twitter,
   Mail,
+  ExternalLink,
   Code,
   Palette,
   Music,
@@ -443,28 +444,31 @@ export default function App() {
     {
       title: "Kingsley",
       description:
-        "An AI-native assistant for legal decisions and documents — details intentionally under wraps for now. Features advanced analysis, context awareness, and a refined UX. Powered by a proprietary fine-tuned LLM.",
+        "An AI-native assistant for legal decisions and documents - details intentionally under wraps for now. Features advanced analysis, context awareness, and a refined UX. Powered by a proprietary fine-tuned LLM.",
       image:
         "https://ucarecdn.com/9bccf43c-d141-4a5f-b5e0-de470d819bf5/-/format/auto/",
       tech: ["React", "TypeScript", "OpenAI", "HuggingFace", "Tailwind CSS"],
       github: "https://github.com/shangobashi/lexia_designPhase_github",
+      ctaUrl: null,
     },
     {
       title: "Plethora",
       description:
-        'Plethora — Real-time Rug Risk for Memecoins. A high-performance SaaS that scores token rug risk in under two seconds with wallet-authenticated access (Solana), a credit-based usage system, and transparent risk factors. Powered by a proprietary fine-tuned LLM. Phase 2 adds "Meme Historian" lore context to enrich trading decisions.',
+        "Plethora - Real-time Rug Risk for Memecoins. A high-performance SaaS that scores token rug risk in under two seconds with wallet-authenticated access (Solana), a credit-based usage system, and transparent risk factors. Powered by a proprietary fine-tuned LLM. Phase 2 adds \"Meme Historian\" lore context to enrich trading decisions.",
       image:
         plethoraImage,
       tech: ["TypeScript", "React", "Node.js", "PostgreSQL", "Vercel"],
       github: "https://github.com/shangobashi",
+      ctaUrl: null,
     },
     {
       title: "Shango.GBA",
       description:
         "Shango.GBA -- Interactive Portfolio. Dive into the past with this interactive portfolio made to look like a (sigh) retro GBA game, running entirely inside the browser. Made with plain HTML/CSS, Vanilla Javascript, Kaplay.JS, Terser.JS, built with Vite and hosted on Vercel with a DuckDuckGo DNS. Have fun exploring!",
-      image: "",
+      image: "https://i.imgur.com/c6lAIEt.png",
       tech: ["HTML", "CSS", "JavaScript", "Kaplay.js", "Terser", "Vite", "Vercel", "DuckDNS"],
       github: "",
+      ctaUrl: "https://www.shangogba.duckdns.org",
     },
   ];
 
@@ -686,9 +690,21 @@ export default function App() {
                           </span>
                         ))}
                       </div>
-                      <span className="inline-flex items-center space-x-2 text-gray-500 opacity-60 cursor-not-allowed">
-                        In Production...
-                      </span>
+                      {project.ctaUrl ? (
+                        <a
+                          href={project.ctaUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
+                        >
+                          <span>View the Project</span>
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      ) : (
+                        <span className="inline-flex items-center space-x-2 text-gray-500 opacity-60 cursor-not-allowed">
+                          In Production...
+                        </span>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -745,6 +761,17 @@ export default function App() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
