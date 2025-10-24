@@ -488,7 +488,7 @@ export default function App() {
     "Codecademy - AI/ML Engineer Professional Certification (2025)",
     "Codecademy - UI/UX Designer Professional Certification (2025)",
     "MIT 6.S191 - Deep Learning Fundamentals (2025)",
-    "DeepMind.AI - AI Fundamentals (2023)",
+    "DeepLearning.AI - AI Fundamentals (2023)",
     "Harvard CS50 - Python, HTML/CSS/JS, AI Fundamentals (2022)",
     "SoloLearn - Certifications in HTML, CSS, Javascript & PHP (2021)"
   ];
@@ -761,6 +761,7 @@ export default function App() {
     </div>
   );
 }
+
 
 
 
