@@ -481,15 +481,13 @@ export default function App() {
   ];
 
   const credentials = [
-    "IBM - Software Engineer Professional Certification (exp. Nov 2025)",
-    "Alchemy University - Blockchain Engineer Certification (exp. Nov 2025)",
+    "IBM - Software Engineer Professional Certification (exp. Dec 2025)",
+    "Alchemy University - Blockchain Engineer Certification (exp. Dec 2025)",
     "Codecademy - Full-Stack Engineer Professional Certifications (2025)",
     "Codecademy - Computer Science Professional Certification (2025)",
     "Codecademy - AI/ML Engineer Professional Certification (2025)",
     "Codecademy - UI/UX Designer Professional Certification (2025)",
-    "MIT 6.S191 - Deep Learning Fundamentals (2025)",
     "DeepLearning.AI - AI Fundamentals (2023)",
-    "Harvard CS50 - Python, HTML/CSS/JS, AI Fundamentals (2022)",
     "SoloLearn - Certifications in HTML, CSS, Javascript & PHP (2021)"
   ];
 
