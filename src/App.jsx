@@ -444,7 +444,7 @@ export default function App() {
     {
       title: "Kingsley",
       description:
-        "An AI-native assistant for legal decisions and documents - details intentionally under wraps for now. Features advanced analysis, context awareness, and a refined UX. Powered by a proprietary fine-tuned LLM.",
+        "RAG system with source-aware output schemas for citation transparency and legal research accuracy.",
       image:
         "https://ucarecdn.com/9bccf43c-d141-4a5f-b5e0-de470d819bf5/-/format/auto/",
       tech: ["React", "TypeScript", "OpenAI", "HuggingFace", "Tailwind CSS"],
@@ -464,7 +464,7 @@ export default function App() {
     {
       title: "Shango.GBA",
       description:
-        "Shango.GBA -- Interactive Portfolio. Dive into the past with this interactive portfolio made to look like a (sigh) retro GBA game, running entirely inside the browser. Made with plain HTML/CSS, Vanilla Javascript, Kaplay.JS, Terser.JS, built with Vite and hosted on Vercel with a DuckDuckGo DNS. Have fun exploring!",
+        "Retro interaction engine built with Kaplay.js featuring custom physics and hardware-mimicry animations.",
       image: "https://i.imgur.com/RRGnxGh.png",
       tech: ["HTML", "CSS", "JavaScript", "Kaplay.js", "Terser", "Vite", "Vercel", "DuckDNS"],
       github: "",
@@ -473,22 +473,22 @@ export default function App() {
   ];
 
   const skills = [
-    { icon: Code, label: "Full Stack Development" },
-    { icon: Cpu, label: "AI & Machine Learning" },
-    { icon: Blocks, label: "Blockchain Technology" },
+    { icon: Code, label: "Full-Stack Engineering" },
+    { icon: Cpu, label: "AI & Agentic Systems" },
+    { icon: Blocks, label: "Data Engineering" },
     { icon: Palette, label: "UI/UX Design" },
     { icon: Music, label: "Sound Engineering" },
   ];
 
   const credentials = [
-    "IBM - Software Engineer Professional Certification (exp. Dec 2025)",
-    "Alchemy University - Blockchain Engineer Certification (exp. Dec 2025)",
-    "Codecademy - Full-Stack Engineer Professional Certifications (2025)",
-    "Codecademy - Computer Science Professional Certification (2025)",
-    "Codecademy - AI/ML Engineer Professional Certification (2025)",
-    "Codecademy - UI/UX Designer Professional Certification (2025)",
-    "DeepLearning.AI - AI Fundamentals (2023)",
-    "SoloLearn - Certifications in HTML, CSS, Javascript & PHP (2021)"
+    "Codecademy - Data Engineer Career Path (2025)",
+    "Codecademy - Computer Science Career Path (2025)",
+    "Codecademy - Full-Stack Engineer Career Path (2025)",
+    "Codecademy - Back-End Engineer Career Path (2025)",
+    "Codecademy - Front-End Engineer Career Path (2025)",
+    "Codecademy - UX Designer Career Path (2025)",
+    "Codecademy - Web Development Skill Path (2025)",
+    "Codecademy - Learn Advanced TypeScript (2025)"
   ];
 
   return (
@@ -542,8 +542,7 @@ export default function App() {
             <h1 className="sr-only">Shango Bashi</h1>
 
             <p className="text-lg md:text-xl mb-12 font-light leading-relaxed text-gray-300">
-              Full-Stack Engineer crafting the future through AI, Blockchain,
-              and Creative Technology
+              Software Engineer (Product) architecting multimodal interfaces for agentic systems
             </p>
 
             {/* Social Links */}
@@ -583,16 +582,10 @@ export default function App() {
                 {/* Text Content */}
                 <div className="space-y-6">
                   <p className="text-lg leading-relaxed text-gray-300">
-                    I'm a passionate Full Stack Engineer with a deep fascination
-                    for emerging technologies. My journey spans across AI and
-                    blockchain development, where I create innovative solutions
-                    that push the boundaries of what's possible.
+                    Technical roots beginning at age 6 (HTML/CSS/JS/Python hobbyist) that evolved into the high-stakes precision of Sound Engineering (2012).
                   </p>
                   <p className="text-lg leading-relaxed text-gray-300">
-                    Beyond code, I'm a sound engineer and artist, bringing a
-                    unique creative perspective to technical challenges. This
-                    blend of technical expertise and artistic vision allows me
-                    to craft experiences that are both functional and beautiful.
+                    Following a resilient five-year spinal injury rehabilitation (2019–2024), I executed a high-intensity 6-month technical surge to formalize decades of technical intuition.
                   </p>
 
                   {/* Credentials */}
