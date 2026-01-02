@@ -499,8 +499,7 @@ export default function App() {
     "Codecademy - Back-End Engineer Career Path (2025)",
     "Codecademy - Front-End Engineer Career Path (2025)",
     "Codecademy - UX Designer Career Path (2025)",
-    "Codecademy - Web Development Skill Path (2025)",
-    "Codecademy - Learn Advanced TypeScript (2025)"
+    "Codecademy - Web Development Skill Path (2025)"
   ];
 
   return (
