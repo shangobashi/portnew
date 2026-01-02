@@ -451,7 +451,7 @@ export default function App() {
       tech: ["Python", "LangChain", "OpenAI", "Multi-Agent Systems"],
       github: "https://github.com/shangobashi/bs_v.0.1.1",
       ctaUrl: "https://github.com/shangobashi/bs_v.0.1.1",
-      ctaLabel: "In production... Sneak peek inside the github repo",
+      ctaLabel: "In production... Sneak peek",
     },
     {
       title: "Kingsley",
