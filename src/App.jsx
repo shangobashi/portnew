@@ -449,8 +449,9 @@ export default function App() {
       image:
         "https://ik.imagekit.io/ljjuz5epq/ChatGPT%20Image%20Nov%203,%202025,%2007_21_41%20PM.png?updatedAt=1762194382903",
       tech: ["Python", "LangChain", "OpenAI", "Multi-Agent Systems"],
-      github: "https://github.com/shangobashi",
-      ctaUrl: null,
+      github: "https://github.com/shangobashi/bs_v.0.1.1",
+      ctaUrl: "https://github.com/shangobashi/bs_v.0.1.1",
+      ctaLabel: "In production... Sneak peek inside the github repo",
     },
     {
       title: "Kingsley",
@@ -705,7 +706,7 @@ export default function App() {
                           rel="noopener noreferrer"
                           className="inline-flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
                         >
-                          <span>View the Project</span>
+                          <span>{project.ctaLabel || "View the Project"}</span>
                           <ExternalLink className="w-4 h-4" />
                         </a>
                       ) : (
