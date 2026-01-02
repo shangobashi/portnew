@@ -447,7 +447,7 @@ export default function App() {
       description:
         "Multi-agent orchestration system coordinating 60+ specialized agents for planning and autonomous code.",
       image:
-        "https://ucarecdn.com/9bccf43c-d141-4a5f-b5e0-de470d819bf5/-/format/auto/",
+        "https://ik.imagekit.io/ljjuz5epq/ChatGPT%20Image%20Nov%203,%202025,%2007_21_41%20PM.png?updatedAt=1762194382903",
       tech: ["Python", "LangChain", "OpenAI", "Multi-Agent Systems"],
       github: "https://github.com/shangobashi",
       ctaUrl: null,
