@@ -10,6 +10,7 @@ import {
   Music,
   Cpu,
   Blocks,
+  Network,
   Sun,
   Moon,
 } from "lucide-react";
@@ -442,6 +443,16 @@ export default function App() {
 
   const projects = [
     {
+      title: "BlueSwarm",
+      description:
+        "Multi-agent orchestration system coordinating 60+ specialized agents for planning and autonomous code.",
+      image:
+        "https://ucarecdn.com/9bccf43c-d141-4a5f-b5e0-de470d819bf5/-/format/auto/",
+      tech: ["Python", "LangChain", "OpenAI", "Multi-Agent Systems"],
+      github: "https://github.com/shangobashi",
+      ctaUrl: null,
+    },
+    {
       title: "Kingsley",
       description:
         "RAG system with source-aware output schemas for citation transparency and legal research accuracy.",
@@ -466,7 +477,7 @@ export default function App() {
       description:
         "Retro interaction engine built with Kaplay.js featuring custom physics and hardware-mimicry animations.",
       image: "https://i.imgur.com/RRGnxGh.png",
-      tech: ["HTML", "CSS", "JavaScript", "Kaplay.js", "Terser", "Vite", "Vercel", "DuckDNS"],
+      tech: ["HTML", "CSS", "JavaScript", "Kaplay.js", "Vite", "Vercel", "DuckDNS"],
       github: "",
       ctaUrl: "https://www.shangogba.duckdns.org",
     },
@@ -476,6 +487,7 @@ export default function App() {
     { icon: Code, label: "Full-Stack Engineering" },
     { icon: Cpu, label: "AI & Agentic Systems" },
     { icon: Blocks, label: "Data Engineering" },
+    { icon: Network, label: "Blockchain Technology Enthusiast" },
     { icon: Palette, label: "UI/UX Design" },
     { icon: Music, label: "Sound Engineering" },
   ];
@@ -542,7 +554,7 @@ export default function App() {
             <h1 className="sr-only">Shango Bashi</h1>
 
             <p className="text-lg md:text-xl mb-12 font-light leading-relaxed text-gray-300">
-              Software Engineer (Product) architecting multimodal interfaces for agentic systems
+              Full-Stack Engineer crafting the future through AI, Data, and Creative Technology
             </p>
 
             {/* Social Links */}
@@ -582,10 +594,16 @@ export default function App() {
                 {/* Text Content */}
                 <div className="space-y-6">
                   <p className="text-lg leading-relaxed text-gray-300">
-                    Technical roots beginning at age 6 (HTML/CSS/JS/Python hobbyist) that evolved into the high-stakes precision of Sound Engineering (2012).
+                    I'm a passionate Full Stack Engineer with a deep fascination
+                    for emerging technologies. My journey spans across web development, AI engineering and
+                    blockchain development, where I strive to create innovative solutions
+                    that push the boundaries of what's possible.
                   </p>
                   <p className="text-lg leading-relaxed text-gray-300">
-                    Following a resilient five-year spinal injury rehabilitation (2019–2024), I executed a high-intensity 6-month technical surge to formalize decades of technical intuition.
+                    Beyond code, I'm a sound engineer and artist, bringing a
+                    unique creative perspective to technical challenges. This
+                    blend of technical expertise and artistic vision allows me
+                    to craft experiences that are both functional and beautiful.
                   </p>
 
                   {/* Credentials */}
