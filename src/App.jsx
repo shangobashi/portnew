@@ -449,16 +449,13 @@ export default function App() {
     const sheen = footerSheenRef.current;
     const timeline = gsap.timeline({
       repeat: -1,
-      repeatDelay: 4.2,
-      defaults: { ease: "power2.out" },
+      yoyo: true,
+      defaults: { ease: "sine.inOut" },
     });
 
-    gsap.set(sheen, { xPercent: -120, opacity: 0 });
+    gsap.set(sheen, { opacity: 0.12 });
 
-    timeline
-      .to(sheen, { opacity: 0.6, duration: 1.05 })
-      .to(sheen, { xPercent: 120, duration: 4.55 }, "<")
-      .to(sheen, { opacity: 0, duration: 1.05 }, "-=0.7");
+    timeline.to(sheen, { opacity: 0.45, duration: 4.2 });
 
     return () => timeline.kill();
   }, []);
