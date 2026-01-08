@@ -741,16 +741,16 @@ export default function App() {
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <a
-                  href="mailto:shangobashi@gmail.com"
-                  className="px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 font-medium bg-white text-black hover:bg-gray-100"
-                >
-                  Get In Touch
-                </a>
-                <a
                   href="https://github.com/shangobashi"
                   className="px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 font-medium bg-gray-800 hover:bg-gray-700 text-white"
                 >
                   View Work
+                </a>
+                <a
+                  href="mailto:shangobashi@gmail.com"
+                  className="px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 font-medium bg-white text-black hover:bg-gray-100"
+                >
+                  Get In Touch
                 </a>
                 <a
                   href="https://blog.shangobashi.com"
@@ -767,7 +767,7 @@ export default function App() {
         <footer className="py-12 px-6 border-t border-gray-800">
           <div className="max-w-6xl mx-auto text-center">
             <p className="text-sm text-gray-400">
-              © 2026 BY SHANGO BASHI
+              © 2026 Shango Bashi
             </p>
           </div>
         </footer>
