@@ -5,6 +5,7 @@ import {
   Github,
   Twitter,
   Mail,
+  PenLine,
   ExternalLink,
   Code,
   Palette,
@@ -449,13 +450,21 @@ export default function App() {
     const sheen = footerSheenRef.current;
     const timeline = gsap.timeline({
       repeat: -1,
-      yoyo: true,
+      repeatDelay: 1.5,
       defaults: { ease: "sine.inOut" },
     });
 
-    gsap.set(sheen, { opacity: 0.12 });
+    gsap.set(sheen, {
+      xPercent: -120,
+      opacity: 0,
+      scaleY: 1.15,
+      transformOrigin: "center",
+    });
 
-    timeline.to(sheen, { opacity: 0.45, duration: 4.2 });
+    timeline
+      .to(sheen, { opacity: 0.85, duration: 0.7 })
+      .to(sheen, { xPercent: 120, duration: 3 }, "<")
+      .to(sheen, { opacity: 0, duration: 0.9 }, "-=0.6");
 
     return () => timeline.kill();
   }, []);
@@ -572,16 +581,17 @@ export default function App() {
             {/* Keep an accessible name for SEO/screen readers but don’t visually render it */}
             <h1 className="sr-only">Shango Bashi</h1>
 
-            <p className="text-lg md:text-xl mb-12 font-light leading-relaxed text-gray-300">
+            <p className="text-lg md:text-xl mb-12 font-medium leading-relaxed text-gray-300">
               Full-Stack Engineer crafting the future through AI, Data, and Creative Technology
             </p>
 
             {/* Social Links */}
             <div className="flex justify-center space-x-6">
               {[
-                { href: "https://github.com/shangobashi", icon: Github },
-                { href: "https://twitter.com/shangobashi", icon: Twitter },
+                { href: "https://github.com/shangobashi", icon: Github },       
+                { href: "https://twitter.com/shangobashi", icon: Twitter },     
                 { href: "mailto:shangobashi@gmail.com", icon: Mail },
+                { href: "https://blog.shangobashi.com", icon: PenLine },
               ].map(({ href, icon: Icon }, index) => (
                 <a
                   key={index}
@@ -784,10 +794,10 @@ export default function App() {
 
         {/* Footer */}
         <div className="px-6">
-          <div className="relative h-px w-full bg-gray-800 overflow-hidden">
+          <div className="relative h-px w-3/4 mx-auto bg-gray-800 overflow-hidden">
             <span
               ref={footerSheenRef}
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-400/40 to-transparent"
+              className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-200/80 to-transparent blur-[2px] mix-blend-screen"
             />
           </div>
         </div>
