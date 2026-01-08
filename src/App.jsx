@@ -1,5 +1,6 @@
 
 import React, { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
 import {
   Github,
   Twitter,
@@ -392,6 +393,7 @@ function DisintegrationCanvas({ text = "Shango Bashi", isDark = true }) {
 export default function App() {
   const [scrollY, setScrollY] = useState(0);
   const [isVisible, setIsVisible] = useState({});
+  const footerSheenRef = useRef(null);
 
   // --- THEME: Dark-only (Light mode disabled but kept for later) ---
   // Force dark mode on and keep the API shape stable.
@@ -439,6 +441,26 @@ export default function App() {
 
     document.querySelectorAll("[id]").forEach((el) => observer.observe(el));
     return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!footerSheenRef.current) return;
+
+    const sheen = footerSheenRef.current;
+    const timeline = gsap.timeline({
+      repeat: -1,
+      repeatDelay: 2.4,
+      defaults: { ease: "power2.out" },
+    });
+
+    gsap.set(sheen, { xPercent: -120, opacity: 0 });
+
+    timeline
+      .to(sheen, { opacity: 0.6, duration: 0.6 })
+      .to(sheen, { xPercent: 120, duration: 2.6 }, "<")
+      .to(sheen, { opacity: 0, duration: 0.6 }, "-=0.4");
+
+    return () => timeline.kill();
   }, []);
 
   const projects = [
@@ -764,7 +786,15 @@ export default function App() {
         </section>
 
         {/* Footer */}
-        <footer className="py-12 px-6 border-t border-gray-800">
+        <div className="px-6">
+          <div className="relative h-px w-full bg-gray-800 overflow-hidden">
+            <span
+              ref={footerSheenRef}
+              className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-400/40 to-transparent"
+            />
+          </div>
+        </div>
+        <footer className="py-12 px-6">
           <div className="max-w-6xl mx-auto text-center">
             <p className="text-sm text-gray-400">
               © 2026 Shango Bashi
