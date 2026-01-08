@@ -756,7 +756,7 @@ export default function App() {
                   href="https://blog.shangobashi.com"
                   className="px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 font-medium bg-gray-800 hover:bg-gray-700 text-white"
                 >
-                  Writings
+                  My Writings
                 </a>
               </div>
             </div>
