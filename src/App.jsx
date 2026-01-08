@@ -478,9 +478,9 @@ export default function App() {
       description:
         "Retro interaction engine built with Kaplay.js featuring custom physics and hardware-mimicry animations.",
       image: "https://i.imgur.com/RRGnxGh.png",
-      tech: ["HTML", "CSS", "JavaScript", "Kaplay.js", "Vite", "Vercel", "DuckDNS"],
+      tech: ["HTML", "CSS", "JavaScript", "Kaplay.js", "Vite", "Vercel"],
       github: "",
-      ctaUrl: "https://www.shangogba.duckdns.org",
+      ctaUrl: "https://gba.shangobashi.com",
     },
   ];
 
@@ -752,6 +752,12 @@ export default function App() {
                 >
                   View Work
                 </a>
+                <a
+                  href="https://blog.shangobashi.com"
+                  className="px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 font-medium bg-gray-800 hover:bg-gray-700 text-white"
+                >
+                  Writings
+                </a>
               </div>
             </div>
           </div>
@@ -761,7 +767,7 @@ export default function App() {
         <footer className="py-12 px-6 border-t border-gray-800">
           <div className="max-w-6xl mx-auto text-center">
             <p className="text-sm text-gray-400">
-              2025 Shango Bashi.
+              © 2026 BY SHANGO BASHI
             </p>
           </div>
         </footer>
