@@ -492,14 +492,15 @@ export default function App() {
       ctaUrl: null,
     },
     {
-      title: "Plethora",
+      title: "ISSALABS",
       description:
-        "Plethora - Real-time Rug Risk for Memecoins. A high-performance SaaS that scores token rug risk in under two seconds with wallet-authenticated access (Solana), a credit-based usage system, and transparent risk factors. Powered by a proprietary fine-tuned LLM. Phase 2 adds \"Meme Historian\" lore context to enrich trading decisions.",
+        "AI Lab — building AI-native products, tools, and structured systems that solve real problems. Home to HookForge, FollowGraph, and other sharp utilities.",
       image:
         plethoraImage,
-      tech: ["TypeScript", "React", "Node.js", "PostgreSQL", "Vercel"],
-      github: "https://github.com/shangobashi",
-      ctaUrl: null,
+      tech: ["TypeScript", "React", "Node.js", "AI Engineering", "Vercel"],
+      github: "https://www.issalabs.xyz",
+      ctaUrl: "https://www.issalabs.xyz",
+      ctaLabel: "Visit ISSALABS",
     },
     {
       title: "Shango.GBA",
@@ -513,10 +514,10 @@ export default function App() {
   ];
 
   const skills = [
-    { icon: Code, label: "Full-Stack Engineering" },
-    { icon: Cpu, label: "AI & Agentic Systems" },
+    { icon: Code, label: "Full-Stack Development" },
+    { icon: Cpu, label: "ML & Agentic Systems" },
     { icon: Blocks, label: "Data Engineering" },
-    { icon: Network, label: "Blockchain Technology Enthusiast" },
+    { icon: Network, label: "AI-Native Products" },
     { icon: Palette, label: "UI/UX Design" },
     { icon: Music, label: "Sound Engineering" },
   ];
@@ -582,7 +583,7 @@ export default function App() {
             <h1 className="sr-only">Shango Bashi</h1>
 
             <p className="text-lg md:text-xl mb-12 font-medium leading-relaxed text-gray-300">
-              Full-Stack Engineer crafting the future through AI, Data, and Creative Technology
+              Software engineer building AI-native products, agentic systems, and structured software that solves real problems.
             </p>
 
             {/* Social Links */}
@@ -623,16 +624,17 @@ export default function App() {
                 {/* Text Content */}
                 <div className="space-y-6">
                   <p className="text-lg leading-relaxed text-gray-300">
-                    I'm a passionate Full Stack Engineer with a deep fascination
-                    for emerging technologies. My journey spans across web development, AI engineering and
-                    blockchain development, where I strive to create innovative solutions
-                    that push the boundaries of what's possible.
+                    I am Shango Bashi, a software engineer focused on full-stack
+                    development, data engineering, machine learning, and agentic
+                    systems. I build AI-native products, workflows, and software
+                    that go beyond chat: structured systems designed to use tools,
+                    work with data, and solve real problems.
                   </p>
                   <p className="text-lg leading-relaxed text-gray-300">
-                    Beyond code, I'm a sound engineer and artist, bringing a
-                    unique creative perspective to technical challenges. This
-                    blend of technical expertise and artistic vision allows me
-                    to craft experiences that are both functional and beautiful.
+                    My background in sound engineering and art continues to inform
+                    my technical work, giving me a strong bias toward systems that
+                    are not only functional, but also clear, coherent, and
+                    thoughtfully designed.
                   </p>
 
                   {/* Credentials */}
@@ -765,15 +767,15 @@ export default function App() {
                 Let's Create Together
               </h2>
               <p className="text-xl mb-12 leading-relaxed text-gray-300">
-                Ready to bring your next project to life? Let's discuss how we
-                can innovate together.
+                Looking for a software engineer who builds with intent? Let's
+                talk about what we can ship together.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
                 <a
                   href="https://github.com/shangobashi"
                   className="px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 font-medium bg-gray-800 hover:bg-gray-700 text-white"
                 >
-                  View Work
+                  Projects
                 </a>
                 <a
                   href="mailto:shangobashi@gmail.com"
