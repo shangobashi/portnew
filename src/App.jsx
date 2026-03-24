@@ -16,7 +16,7 @@ import {
   Sun,
   Moon,
 } from "lucide-react";
-const plethoraImage = 'https://i.imgur.com/98sy6v4.png';
+
 
 /**
  * DisintegrationCanvas — FULL-SCREEN, transparent, theme-synced.
@@ -494,10 +494,10 @@ export default function App() {
     {
       title: "ISSALABS",
       description:
-        "AI Lab — building AI-native products, tools, and structured systems that solve real problems. Home to HookForge, FollowGraph, and other sharp utilities.",
+        "AI Lab — building AI-native products, tools, and structured systems that solve real problems. Home to NanoGyro, FollowGraph, and other sharp utilities.",
       image:
-        plethoraImage,
-      tech: ["TypeScript", "React", "Node.js", "AI Engineering", "Vercel"],
+        "/issalabs.jpg",
+      tech: ["TypeScript", "React", "Node.js", "AI Engineering", "Python"],
       github: "https://www.issalabs.xyz",
       ctaUrl: "https://www.issalabs.xyz",
       ctaLabel: "Visit ISSALABS",
@@ -505,9 +505,9 @@ export default function App() {
     {
       title: "Shango.GBA",
       description:
-        "Retro interaction engine built with Kaplay.js featuring custom physics and hardware-mimicry animations.",
+        "Retro portfolio built with Kaplay.js",
       image: "https://i.imgur.com/RRGnxGh.png",
-      tech: ["HTML", "CSS", "JavaScript", "Kaplay.js", "Vite", "Vercel"],
+      tech: ["HTML", "CSS", "JavaScript", "Kaplay.js"],
       github: "",
       ctaUrl: "https://gba.shangobashi.com",
     },
