@@ -522,15 +522,6 @@ export default function App() {
     { icon: Music, label: "Sound Engineering" },
   ];
 
-  const credentials = [
-    "Codecademy - Data Engineer Career Path (2025)",
-    "Codecademy - Computer Science Career Path (2025)",
-    "Codecademy - Full-Stack Engineer Career Path (2025)",
-    "Codecademy - Back-End Engineer Career Path (2025)",
-    "Codecademy - Front-End Engineer Career Path (2025)",
-    "Codecademy - UX Designer Career Path (2025)",
-    "Codecademy - Web Development Skill Path (2025)"
-  ];
 
   return (
     <div
@@ -637,21 +628,6 @@ export default function App() {
                     thoughtfully designed.
                   </p>
 
-                  {/* Credentials */}
-                  <div className="pt-6">
-                    <h3 className="text-xl font-medium mb-4">Education & Certifications</h3>
-                    <div className="space-y-3">
-                      {credentials.map((credential, index) => (
-                        <div
-                          key={index}
-                          className="flex items-center space-x-3"
-                        >
-                          <div className="w-1.5 h-1.5 rounded-full bg-gray-400" />
-                          <span className="text-gray-400">{credential}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
                 </div>
 
                 {/* Skills Grid */}
